@@ -65,8 +65,11 @@
 <h2>Upload and display image.</h2>
 <p>Show image in html using Yandex Functions + JSON + JavaScript</p>
 
+<p>Use small images to see text</p>
+
 <form id="image-convert-form">
     <input type="file" id="image_file" name="image_file" accept="image/jpeg"><br>
+    <input type="text" id="text_string" name="text_string"><br>
 
     <input type="checkbox" id="image_invert" name="image_invert" value="checked">
     <label for="checkbox">Invert Image!</label><br>
@@ -146,7 +149,9 @@
             const message = {
                 'image_file': fileImage.name,
                 'image_data': imageEncodedBase64,
-                'image_invert': 'checked' === formData.get('image_invert')
+                'image_invert': 'checked' === formData.get('image_invert'),
+                'text_string' : formData.get('text_string')
+
             };
 
             fetch('https://functions.yandexcloud.net/d4ekl90adrcfdf0un492', {
