@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="My Blog">
   <meta name="author" content="Andrew Shay">
-  <link rel="icon" href="../static/img/favicon.ico">
+  <link rel="icon" href="../../static/img/favicon.ico">
 
   <title>My Blog</title>
 
-  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
 
   <!-- Custom CSS -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/custom.css">
+  <link rel="stylesheet" href="../../static/css/custom.css">
 </head>
 
 <body>
@@ -36,15 +36,15 @@
     <div class="container nav-bar">
       <div class="row nav">
         
-          <a class="col-md-auto p-2" href="../">Home</a>
+          <a class="col-md-auto p-2" href="../../">Home</a>
         
-          <a class="col-md-auto p-2" href="../perviy-semestr">Первый семестр</a>
+          <a class="col-md-auto p-2" href="../../perviy-semestr">Первый семестр</a>
         
-          <a class="col-md-auto p-2" href="../vtoroy-semestr">Второй семестр</a>
+          <a class="col-md-auto p-2" href="../../vtoroy-semestr">Второй семестр</a>
         
-          <a class="col-md-auto p-2" href="../tretiy-semestr/">Третий семестр</a>
+          <a class="col-md-auto p-2" href="../">Третий семестр</a>
         
-          <a class="col-md-auto p-2" href="../chetvertiy-semestr/">Четвертый семестр</a>
+          <a class="col-md-auto p-2" href="../../chetvertiy-semestr/">Четвертый семестр</a>
         
       </div>
     </div>
@@ -57,12 +57,33 @@
 
         
 <!-- BLOG POST -->
-<div>
-  <h1>Two Column Html1</h1>
-  <p>This is a two column page. <br>
-This is the body. <br>
-The left side. <br>
-This is formatted with html. </p>
+<div class="blog-post">
+  <h1 class="blog-post-title">Пакеты прикладных программ для статистической обработки и анализа данных</h1>
+  <h3>ЛР №1</h3>
+<p>Статистические функции в электронных таблицах</p>
+<ul>
+<li><a href="https://disk.yandex.ru/i/1YjorncZh4dsxw">Отчет</a></li>
+</ul>
+<hr>
+<h3>ЛР №2</h3>
+<p>Яндекс.Формы.</p>
+<ul>
+<li><p><a href="https://disk.yandex.ru/i/QrxVyzXUw4emYA">Отчет</a></p>
+</li>
+<li><p><a href="https://forms.yandex.ru/u/655653b5c09c020e69c19da0/">Опрос</a></p>
+</li>
+</ul>
+<hr>
+<h3>ЛР №3</h3>
+<p>Обработка данных средствами Excel и KNIME</p>
+<ul>
+<li><p><a href="https://disk.yandex.ru/i/gMuij-W4PxMyDg">Excel</a></p>
+</li>
+<li><p><a href="https://disk.yandex.ru/d/mVpzuZwP7XvFtw">KNIME</a></p>
+</li>
+</ul>
+<hr>
+
 </div>
 <!-- END BLOG POST -->
 
@@ -71,10 +92,18 @@ This is formatted with html. </p>
 
 <!-- SIDEBAR -->
 <aside class="col-md-4">
-  <h1>Right Side</h1>
+  <div class="p-3 mb-3 bg-light rounded">
+    <h4>Sidebar</h4>
+    <p class="mb-0">Placeholder
+    </p>
+  </div>
 
-<p>This is the right side.<br>
-This is formatted with html.</p>
+  <div class="p-3">
+    <h4>Sidebar 2</h4>
+    <ol class="list-unstyled">
+      Placeholder
+    </ol>
+  </div>
 </aside>
 <!-- END SIDEBAR -->
 
