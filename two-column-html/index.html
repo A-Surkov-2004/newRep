@@ -38,9 +38,7 @@
         
           <a class="col-md-auto p-2" href="../">Home</a>
         
-          <a class="col-md-auto p-2" href="../perviy-semestr">Первый семестр</a>
-        
-          <a class="col-md-auto p-2" href="../vtoroy-semestr">Второй семестр</a>
+          <a class="col-md-auto p-2" href="../perviy-semestr/">Первый и второй семестры</a>
         
           <a class="col-md-auto p-2" href="../tretiy-semestr/">Третий семестр</a>
         
@@ -56,26 +54,47 @@
       <div class="col">
 
         
-<!-- BLOG POST -->
-<div>
-  <h1>Two Column Html1</h1>
-  <p>This is a two column page. <br>
+
+  <div class="heading">
+ 
+    <h1>
+        Two Column Html1
+    </h1>
+ 
+  </div>
+<style type="text/css">
+#wrap {
+   width:auto;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:50%;
+}
+#right_col {
+   float:right;
+   width:50%;
+}
+.heading {
+  text-align: left;
+}
+
+</style>
+<div id="wrap">
+    <div id="left_col">
+
+      <p>This is a two column page. <br>
 This is the body. <br>
 The left side. <br>
 This is formatted with html. </p>
-</div>
-<!-- END BLOG POST -->
-
-</div>
-<!-- END MAIN BODY -->
-
-<!-- SIDEBAR -->
-<aside class="col-md-4">
-  <h1>Right Side</h1>
+    </div>
+    <div id="right_col">
+        <h1>Right Side</h1>
 
 <p>This is the right side.<br>
 This is formatted with html.</p>
-</aside>
+    </div>
+</div>
 <!-- END SIDEBAR -->
 
 
@@ -83,7 +102,7 @@ This is formatted with html.</p>
   </main>
 
   <footer class="site-footer">
-    Andrey S.
+       Andrey S.
   </footer>
 
   <!-- Bootstrap core JavaScript
