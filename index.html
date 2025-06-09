@@ -1,61 +1,69 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="My Blog">
-  <meta name="author" content="Andrew Shay">
+  <meta name="description" content="Студенческое портфолио Андрея Суркова - Записи о обучении">
+  <meta name="author" content="Andrey Surkov">
   <link rel="icon" href="static/img/favicon.ico">
 
-  <title>My Blog</title>
+  <title>Welcome to Simple Strap Theme!</title>
 
-  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="static/css/custom.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-  <main role="main" class="container">
-
-    <!-- HEADER -->
-    <header class="site-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col pt-1">
-          <a class="site-header-name" href="/">
-            <h1 class="site-header-name">My Blog</h1>
-          </a>
-        </div>
-      </div>
-    </header>
-    <!-- END HEADER -->
-
-    <!-- NAVIGATION -->
-    <div class="container nav-bar">
-      <div class="row nav">
-        
-          <a class="col-md-auto p-2" href="./">Home</a>
-        
-          <a class="col-md-auto p-2" href="perviy-semestr/">Первый и второй семестры</a>
-        
-          <a class="col-md-auto p-2" href="tretiy-semestr/">Третий семестр</a>
-        
-          <a class="col-md-auto p-2" href="chetvertiy-semestr/">Четвертый семестр</a>
-        
-          <a class="col-md-auto p-2" href="pyatiy-semestr/">Пятый семестр</a>
-        
+<body class="d-flex flex-column min-vh-100">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">
+        <i class="fas fa-graduation-cap me-2"></i>Портфолио Андрея Суркова
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perviy-semestr/">1-2 семестр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tretiy-semestr/">3 семестр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chetvertiy-semestr/">4 семестр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pyatiy-semestr/">5 семестр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shestoi-semestr/">6 семестр</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- END NAVIGATION -->
+  </nav>
 
-    <div class="row">
-
-      <!-- MAIN BODY -->
-      <div class="col">
-
-        
+  <!-- Main Content -->
+  <main class="flex-grow-1 py-4">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-12">
+          
 <!-- BLOG POST -->
 <div class="blog-post">
   <h1 class="blog-post-title">Welcome to Simple Strap Theme!</h1>
@@ -123,27 +131,46 @@ website with some pages and a blog.
 </aside>
 <!-- END SIDEBAR -->
 
-
+        </div>
+      </div>
     </div>
   </main>
 
-  <footer class="site-footer">
-       Andrey S.
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2023 Андрей Сурков. Студенческое портфолио.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white me-3"><i class="fab fa-vk"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-telegram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Инициализация компонентов Bootstrap
+    document.addEventListener('DOMContentLoaded', function() {
+      // Активируем dropdown меню
+      var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+      var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl)
+      });
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
-
-
+      // Активируем всплывающие подсказки
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+    });
+  </script>
+  <script src="static/js/custom.js"></script>
 </body>
 
 </html>
