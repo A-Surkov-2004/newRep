@@ -64,32 +64,154 @@
       <div class="row">
         <div class="col-12">
           
-<!-- BLOG POST -->
-<div class="blog-post">
-  <h1 class="blog-post-title"></h1>
-  
-</div>
-<!-- END BLOG POST -->
 
-</div>
-<!-- END MAIN BODY -->
+<style>
+  .discipline-container {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
 
-<!-- SIDEBAR -->
-<aside class="col-md-4">
-  <div class="p-3 mb-3 bg-light rounded">
-    <h4>Sidebar</h4>
-    <p class="mb-0">Placeholder
-    </p>
+  .discipline-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .discipline-sidebar {
+    width: 320px;
+  }
+
+  .discipline-header {
+    background: linear-gradient(135deg, #ffb28b  0%, #ff9966  100%);
+    color: white;
+    padding: 2.5rem 0;
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .discipline-header h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .discipline-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+  }
+
+  .discipline-content {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    line-height: 1.6;
+  }
+
+  .discipline-content h2 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .discipline-content h3 {
+    color: #4ca1af;
+    margin-top: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  }
+
+  .sidebar-card h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .resource-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .resource-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .resource-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #4ca1af;
+  }
+
+  @media (max-width: 992px) {
+    .discipline-container {
+      flex-direction: column;
+    }
+
+    .discipline-sidebar {
+      width: 100%;
+    }
+
+    .discipline-header {
+      padding: 1.75rem 0;
+    }
+  }
+</style>
+
+<div class="discipline-header text-center">
+  <div class="container">
+    <h1></h1>
+    <div class="discipline-meta justify-content-center">
+      
+      
+    </div>
   </div>
+</div>
 
-  <div class="p-3">
-    <h4>Sidebar 2</h4>
-    <ol class="list-unstyled">
-      Placeholder
-    </ol>
+<div class="container">
+  <div class="discipline-container">
+    <!-- Основное содержимое -->
+    <main class="discipline-main">
+      <article class="discipline-content">
+        
+      </article>
+    </main>
+
+    <!-- Боковая панель -->
+    <aside class="discipline-sidebar">
+      <div class="sidebar-card">
+        <h4><i class="fas fa-link me-2"></i>Ресурсы</h4>
+        <ul class="resource-list">
+          
+          
+          
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4><i class="fas fa-info-circle me-2"></i>О дисциплине</h4>
+        
+        
+        
+      </div>
+    </aside>
   </div>
-</aside>
-<!-- END SIDEBAR -->
+</div>
+
 
         </div>
       </div>
